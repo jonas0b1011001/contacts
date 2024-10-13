@@ -24,7 +24,7 @@ export const transformNode = (contact) => {
 		parentNodeId: contact.managersName,
 		fullName: contact.displayName,
 		org: contact.org,
-		photoUrl: `${contact.url}?photo`,
+		photoUrl: `${contact.url}?photo4`,
 		title: contact.title,
 		link: generateUrl(`apps/contacts/${GROUP_ALL_CONTACTS}/${contact.key}`),
 		expanded: !contact.managersName,

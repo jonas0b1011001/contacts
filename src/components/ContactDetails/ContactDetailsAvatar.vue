@@ -68,7 +68,7 @@
 
 			<template v-if="contact.photo">
 				<!-- FIXME: the link seems to have a bigger font size than the button caption -->
-				<ActionLink :href="`${contact.url}?photo`"
+				<ActionLink :href="`${contact.url}?photo1`"
 					target="_blank">
 					<template #icon>
 						<IconDownload :size="20" />
@@ -379,7 +379,7 @@ export default {
 				}
 				this.photoUrl = photoUrl
 			} else if (this.contact.url) {
-				this.photoUrl = `${this.contact.url}?photo`
+				this.photoUrl = `${this.contact.url}?photo2`
 			}
 		},
 
